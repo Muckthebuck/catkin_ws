@@ -1,0 +1,33 @@
+lego_loam:
+    laser:
+        num_vertical_scans: 32                 # Number of vertical channels in LiDAR (corresponds to "channels")
+        num_horizontal_scans: 500              # Number of points in one vertical channel
+        ground_scan_index: 7                   # Index of the ground scan (modify as needed)
+        vertical_angle_bottom: -25             # Lower FOV (degrees)
+        vertical_angle_top: 15                 # Upper FOV (degrees)
+        sensor_mount_angle: 0                  # Angle between LiDAR and mounting position (check if adjustment is needed)
+        scan_period: 0.05                      # Rotation period of LiDAR (corresponds to "rotation_frequency" - 1/20)
+
+    imageProjection:
+        segment_valid_point_num: 5             # Number of valid points in a segment
+        segment_valid_line_num: 3              # Number of valid lines in a segment
+        segment_theta: 60.0                    # Theta value for segment (decreasing may improve accuracy)
+
+    featureAssociation:
+        edge_threshold: 0.1                    # Threshold for edge features
+        surf_threshold: 0.1                    # Threshold for surface features
+        nearest_feature_search_distance: 5     # Distance to search for nearest features
+
+    mapping:
+        enable_loop_closure: true             # Enable/disable loop closure
+        mapping_frequency_divider: 5           # Frequency divider for mapping
+
+        surrounding_keyframe_search_radius: 50.0   # key frame within n meters from current pose for scan-to-map 							   # optimization (when loop closure disabled)
+        surrounding_keyframe_search_num: 50        # submap size (when loop closure enabled)
+
+        history_keyframe_search_radius: 7.0        # key frame within n meters from current pose for loop closure
+        history_keyframe_search_num: 25            # 2n+1 number of history key frames fused into a submap for loop closure
+        history_keyframe_fitness_score: 0.3        # the smaller the better alignment
+
+        global_map_visualization_search_radius: 500.0 # key frames within n meters will be visualized
+
