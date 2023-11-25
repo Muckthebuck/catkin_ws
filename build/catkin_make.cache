@@ -1,0 +1,2 @@
+LeGO-LOAM-BOR/LeGO-LOAM:LeGO-LOAM-BOR/cloud_msgs
+-DCATKIN_DEVEL_PREFIX=/home/mukul/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukul/catkin_ws/install -G Unix Makefiles
