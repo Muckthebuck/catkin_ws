@@ -1,2 +1,2 @@
-LeGO-LOAM-BOR/LeGO-LOAM:LeGO-LOAM-BOR/cloud_msgs
+VINS-Fusion/camera_models:VINS-Fusion/global_fusion:VINS-Fusion/loop_fusion:VINS-Fusion/vins_estimator
 -DCATKIN_DEVEL_PREFIX=/home/mukul/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/mukul/catkin_ws/install -G Unix Makefiles

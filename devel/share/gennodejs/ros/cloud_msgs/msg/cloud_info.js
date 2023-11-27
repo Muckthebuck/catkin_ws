@@ -171,11 +171,6 @@ class cloud_info {
     bool[]    segmentedCloudGroundFlag # true - ground point, false - other points
     uint32[]  segmentedCloudColInd # point column index in range image
     float32[] segmentedCloudRange # point range 
-    
-    
-    
-    
-    
     ================================================================================
     MSG: std_msgs/Header
     # Standard metadata for higher-level stamped data types.
