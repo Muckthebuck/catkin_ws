@@ -1,2 +1,2 @@
 # catkin_ws
- SLAM-ros
+Running a SOTA SLAM algorithm
